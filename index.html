@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Bun - Kelembutan di Setiap Gigitan</title>
+    <title>Bunny Bun - Premium Artisan Bakery</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Poppins & Fredoka -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; }
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
         .font-brand { font-family: 'Fredoka', sans-serif; }
     </style>
 </head>
@@ -20,93 +20,123 @@
     <!-- NAVBAR -->
     <nav class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#F3E9DC]">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
+            <a href="#home" class="flex items-center space-x-2">
                 <span class="text-2xl font-brand font-600 text-[#D4A373]">🐰 Bunny<span class="text-[#A26967]">Bun</span></span>
-            </div>
-            <div class="hidden md:flex space-x-8 font-medium">
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm">
                 <a href="#home" class="hover:text-[#D4A373] transition">Home</a>
+                <a href="#keunggulan" class="hover:text-[#D4A373] transition">Keunggulan</a>
                 <a href="#menu" class="hover:text-[#D4A373] transition">Menu</a>
-                <a href="#pembayaran" class="hover:text-[#D4A373] transition">Pembayaran</a>
-                <a href="#kontak" class="hover:text-[#D4A373] transition">Kontak</a>
+                <a href="#testimoni" class="hover:text-[#D4A373] transition">Testimoni</a>
+                <a href="#faq" class="hover:text-[#D4A373] transition">FAQ</a>
+                <a href="#order" class="hover:text-[#D4A373] transition">Form Order</a>
             </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20Bunny%20Bun,%20saya%20mau%20order%20rotinya!" target="_blank" class="bg-[#D4A373] text-white px-5 py-2 rounded-full font-semibold hover:bg-[#C18C5D] transition shadow-md shadow-[#D4A373]/20">
-                Pesan Sekarang
+            <a href="#order" class="bg-[#D4A373] text-white px-5 py-2 rounded-full font-semibold hover:bg-[#C18C5D] transition text-sm shadow-md shadow-[#D4A373]/20">
+                Pesan Cepat
             </a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+    <section id="home" class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 space-y-6 text-center md:text-left">
-            <span class="bg-[#FAEDCD] text-[#B58252] text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Freshly Baked Every Day</span>
+            <span class="bg-[#FAEDCD] text-[#B58252] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Premium & Halal Certified</span>
             <h1 class="text-4xl md:text-6xl font-brand font-600 text-[#4A3E3D] leading-tight">
                 Kelembutan Roti <br><span class="text-[#D4A373]">Selembut Kelinci</span>
             </h1>
-            <p class="text-gray-600 max-w-md mx-auto md:mx-0">
-                Dibuat dengan bahan premium, tanpa pengawet, dan penuh rasa cinta. Hadirkan kehangatan Bunny Bun di setiap momen serumu.
+            <p class="text-gray-600 max-w-md mx-auto md:mx-0 text-sm md:text-base">
+                Dibuat dengan bahan premium impor, tanpa pengawet, dan dipanggang segar setiap pagi. Hadirkan kehangatan Bunny Bun di meja makanmu.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-                <a href="#menu" class="bg-[#A26967] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-[#8B5553] transition text-center">
-                    Lihat Menu
+                <a href="#menu" class="bg-[#A26967] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-[#8B5553] transition text-center shadow-lg shadow-[#A26967]/20">
+                    Eksplor Menu
                 </a>
-                <a href="https://wa.me/6281234567890?text=Halo%20Bunny%20Bun,%20bisa%20minta%20info%20promo%20hari%20ini?" target="_blank" class="border-2 border-[#D4A373] text-[#D4A373] px-8 py-3.5 rounded-full font-semibold hover:bg-[#D4A373] hover:text-white transition text-center">
-                    Tanya Promo 
+                <a href="#order" class="border-2 border-[#D4A373] text-[#D4A373] px-8 py-3.5 rounded-full font-semibold hover:bg-[#D4A373] hover:text-white transition text-center">
+                    Isi Form Order
                 </a>
             </div>
         </div>
         <div class="flex-1 relative">
             <div class="absolute inset-0 bg-[#FAEDCD] rounded-full filter blur-3xl opacity-60 -z-10 transform scale-95"></div>
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800" alt="Roti Bunny Bun" class="rounded-3xl shadow-2xl object-cover w-full h-[350px] md:h-[450px]">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800" alt="Roti Bunny Bun" class="rounded-3xl shadow-2xl object-cover w-full h-[320px] md:h-[420px]">
         </div>
     </section>
 
-    <!-- MENU & HARGA -->
-    <section id="menu" class="bg-[#F9F6F0] py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center max-w-xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-brand font-600 text-[#4A3E3D]">Menu Favorit Bunny Bun</h2>
-                <p class="text-gray-500 mt-2">Pilihan rasa terbaik yang siap memanjakan lidahmu hari ini.</p>
+    <!-- FITUR 1: KEUNGGULAN TOKO -->
+    <section id="keunggulan" class="bg-[#FAEDCD]/30 py-16 border-y border-[#F3E9DC]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-brand font-600 mb-12 text-[#4A3E3D]">Kenapa Harus Bunny Bun?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC]">
+                    <div class="w-12 h-12 bg-[#FAEDCD] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">🌾</div>
+                    <h3 class="font-semibold text-lg mb-2">Bahan Premium</h3>
+                    <p class="text-gray-500 text-sm">Menggunakan mentega mentah pilihan dan tepung jepang kualitas tertinggi.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC]">
+                    <div class="w-12 h-12 bg-[#FAEDCD] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">⏰</div>
+                    <h3 class="font-semibold text-lg mb-2">Fresh From Oven</h3>
+                    <p class="text-gray-500 text-sm">Roti diproduksi dan dipanggang langsung di hari pengiriman Anda.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC]">
+                    <div class="w-12 h-12 bg-[#FAEDCD] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">🛡️</div>
+                    <h3 class="font-semibold text-lg mb-2">Tanpa Pengawet</h3>
+                    <p class="text-gray-500 text-sm">Sangat aman dikonsumsi oleh anak-anak hingga orang tua setiap hari.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC]">
+                    <div class="w-12 h-12 bg-[#FAEDCD] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">🛵</div>
+                    <h3 class="font-semibold text-lg mb-2">Kurir Instant</h3>
+                    <p class="text-gray-500 text-sm">Pengiriman cepat dilapisi bungkus aman agar tekstur roti terjaga.</p>
+                </div>
             </div>
-            
+        </div>
+    </section>
+
+    <!-- FITUR 2: MENU DENGAN TABS & HARGA -->
+    <section id="menu" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-brand font-600 text-[#4A3E3D]">Katalog Menu Terbaik</h2>
+                <p class="text-gray-500 mt-2">Pilih varian rasa favorit yang siap mencerahkan harimu.</p>
+            </div>
+
+            <!-- Grid Menu -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Item 1 -->
+                <!-- Roti 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-[#F3E9DC]">
-                    <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&q=80&w=600" alt="Choco Bunny" class="h-56 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&q=80&w=600" alt="Choco" class="h-52 w-full object-cover">
                     <div class="p-6">
-                        <span class="text-xs font-semibold text-[#D4A373] uppercase tracking-wider">Best Seller</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2 text-[#4A3E3D]">Choco Bunny Melt</h3>
-                        <p class="text-gray-500 text-sm mb-4">Roti lembut dengan isian cokelat Belgia lumer yang melimpah.</p>
-                        <div class="flex justify-between items-center pt-2 border-t border-gray-100">
+                        <span class="bg-red-50 text-red-500 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Terlaris</span>
+                        <h3 class="text-lg font-bold mt-2 text-[#4A3E3D]">Choco Bunny Melt</h3>
+                        <p class="text-gray-500 text-xs mt-1 mb-4">Roti super lembut diisi cokelat Belgia lumer murni yang sangat melimpah.</p>
+                        <div class="flex justify-between items-center pt-3 border-t border-gray-100">
                             <span class="text-lg font-bold text-[#A26967]">Rp 15.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20Bunny%20Bun,%20saya%20mau%20pesan%20Choco%20Bunny%20Melt" target="_blank" class="bg-[#FAEDCD] text-[#B58252] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#D4A373] hover:text-white transition">Beli</a>
+                            <a href="#order" class="bg-[#FAEDCD] text-[#B58252] px-4 py-1.5 rounded-xl text-xs font-semibold hover:bg-[#D4A373] hover:text-white transition">Pesan</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Item 2 -->
+                <!-- Roti 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-[#F3E9DC]">
-                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&q=80&w=600" alt="Milky Bun" class="h-56 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&q=80&w=600" alt="Milky" class="h-52 w-full object-cover">
                     <div class="p-6">
-                        <span class="text-xs font-semibold text-[#D4A373] uppercase tracking-wider">Premium</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2 text-[#4A3E3D]">Milky Butter Bun</h3>
-                        <p class="text-gray-500 text-sm mb-4">Aroma mentega yang kuat dipadukan dengan susu bubuk premium di atasnya.</p>
-                        <div class="flex justify-between items-center pt-2 border-t border-gray-100">
+                        <span class="bg-amber-50 text-amber-600 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Premium</span>
+                        <h3 class="text-lg font-bold mt-2 text-[#4A3E3D]">Milky Butter Bun</h3>
+                        <p class="text-gray-500 text-xs mt-1 mb-4">Aroma butter premium dengan taburan susu bubuk gurih manis di atasnya.</p>
+                        <div class="flex justify-between items-center pt-3 border-t border-gray-100">
                             <span class="text-lg font-bold text-[#A26967]">Rp 18.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20Bunny%20Bun,%20saya%20mau%20pesan%20Milky%20Butter%20Bun" target="_blank" class="bg-[#FAEDCD] text-[#B58252] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#D4A373] hover:text-white transition">Beli</a>
+                            <a href="#order" class="bg-[#FAEDCD] text-[#B58252] px-4 py-1.5 rounded-xl text-xs font-semibold hover:bg-[#D4A373] hover:text-white transition">Pesan</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Item 3 -->
+                <!-- Roti 3 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-[#F3E9DC]">
-                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600" alt="Cheese Bun" class="h-56 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600" alt="Cheese" class="h-52 w-full object-cover">
                     <div class="p-6">
-                        <span class="text-xs font-semibold text-[#D4A373] uppercase tracking-wider">Favorite</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2 text-[#4A3E3D]">Savory Cheese Floss</h3>
-                        <p class="text-gray-500 text-sm mb-4">Perpaduan abon ayam gurih melimpah dan keju cheddar pilihan.</p>
-                        <div class="flex justify-between items-center pt-2 border-t border-gray-100">
+                        <span class="bg-emerald-50 text-emerald-600 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Asin Gurih</span>
+                        <h3 class="text-lg font-bold mt-2 text-[#4A3E3D]">Savory Cheese Floss</h3>
+                        <p class="text-gray-500 text-xs mt-1 mb-4">Abon ayam spesial melimpah dipadukan dengan keju cheddar yang gurih.</p>
+                        <div class="flex justify-between items-center pt-3 border-t border-gray-100">
                             <span class="text-lg font-bold text-[#A26967]">Rp 20.000</span>
-                            <a href="https://wa.me/6281234567890?text=Halo%20Bunny%20Bun,%20saya%20mau%20pesan%20Savory%20Cheese%20Floss" target="_blank" class="bg-[#FAEDCD] text-[#B58252] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#D4A373] hover:text-white transition">Beli</a>
+                            <a href="#order" class="bg-[#FAEDCD] text-[#B58252] px-4 py-1.5 rounded-xl text-xs font-semibold hover:bg-[#D4A373] hover:text-white transition">Pesan</a>
                         </div>
                     </div>
                 </div>
@@ -115,58 +145,170 @@
     </section>
 
     <!-- CARA PEMBAYARAN -->
-    <section id="pembayaran" class="max-w-6xl mx-auto px-6 py-20 text-center">
-        <div class="max-w-xl mx-auto mb-12">
-            <h2 class="text-3xl font-brand font-600 text-[#4A3E3D]">Cara Pembayaran yang Mudah</h2>
-            <p class="text-gray-500 mt-2">Kami menerima berbagai opsi pembayaran demi kenyamanan Anda belanja di Bunny Bun.</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div class="p-6 bg-[#FFFDF9] border border-[#F3E9DC] rounded-2xl">
-                <div class="text-3xl mb-3">📱</div>
-                <h4 class="font-semibold text-lg text-[#4A3E3D] mb-1">E-Wallet</h4>
-                <p class="text-gray-500 text-sm">Gopay, OVO, ShopeePay, Dana (Tinggal scan QRIS saat pesan via WA)</p>
-            </div>
-            <div class="p-6 bg-[#FFFDF9] border border-[#F3E9DC] rounded-2xl">
-                <div class="text-3xl mb-3">🏦</div>
-                <h4 class="font-semibold text-lg text-[#4A3E3D] mb-1">Transfer Bank</h4>
-                <p class="text-gray-500 text-sm">BCA, Mandiri, BNI, BRI otomatis terverifikasi setelah kirim bukti chat.</p>
-            </div>
-            <div class="p-6 bg-[#FFFDF9] border border-[#F3E9DC] rounded-2xl">
-                <div class="text-3xl mb-3">💵</div>
-                <h4 class="font-semibold text-lg text-[#4A3E3D] mb-1">COD (Bayar di Tempat)</h4>
-                <p class="text-gray-500 text-sm">Khusus pengiriman radius 5 KM menggunakan kurir internal Bunny Bun.</p>
+    <section id="pembayaran" class="bg-[#F9F6F0] py-16 border-t border-[#F3E9DC]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-brand font-600 text-[#4A3E3D] mb-2">Metode Pembayaran</h2>
+            <p class="text-gray-500 text-sm mb-10">Transaksi aman dan fleksibel demi kenyamanan Anda.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm">
+                    <span class="text-2xl">⚡</span>
+                    <h4 class="font-bold text-sm text-[#4A3E3D] mt-2 mb-1">QRIS / E-Wallet</h4>
+                    <p class="text-gray-400 text-xs">Scan praktis lewat OVO, GoPay, Dana, ShopeePay, atau LinkAja.</p>
+                </div>
+                <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm">
+                    <span class="text-2xl">🏦</span>
+                    <h4 class="font-bold text-sm text-[#4A3E3D] mt-2 mb-1">Transfer Bank</h4>
+                    <p class="text-gray-400 text-xs">Menerima transfer antar bank (BCA, Mandiri, BNI, BRI).</p>
+                </div>
+                <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm">
+                    <span class="text-2xl">💵</span>
+                    <h4 class="font-bold text-sm text-[#4A3E3D] mt-2 mb-1">COD (Bayar di Tempat)</h4>
+                    <p class="text-gray-400 text-xs">Bayar tunai ke kurir kami khusus wilayah radius 5 KM dari outlet.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- KONTAK & CALL TO ACTION -->
-    <section id="kontak" class="bg-[#A26967] text-white py-16">
-        <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
-            <h2 class="text-3xl md:text-4xl font-brand font-600">Mau Roti Hangat Dikirim ke Rumahmu?</h2>
-            <p class="text-[#F5E6E6] max-w-lg mx-auto">
-                Hubungi Admin Bunny Bun sekarang juga. Pesananmu akan diproses cepat dan diantar dalam kondisi *fresh from the oven*.
-            </p>
+    <!-- FITUR 3: TESTIMONI PELANGGAN -->
+    <section id="testimoni" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <h2 class="text-2xl md:text-3xl font-brand font-600 text-[#4A3E3D]">Apa Kata Sahabat Bunny?</h2>
+            <p class="text-gray-500 text-sm mt-1">Ulasan jujur dari mereka yang sudah mencoba kelembutan roti kami.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC] relative">
+                <span class="text-4xl text-[#FAEDCD] absolute top-2 right-4 font-serif">“</span>
+                <p class="text-gray-600 text-sm italic mb-4">"Rotinya beneran selembut itu! Choco Bunny-nya pas digigit cokelatnya lumer banget tapi gak bikin enek. Anak-anak saya suka banget!"</p>
+                <div class="font-bold text-xs text-[#A26967]">- Mama Amel, Jakarta</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC] relative">
+                <span class="text-4xl text-[#FAEDCD] absolute top-2 right-4 font-serif">“</span>
+                <p class="text-gray-600 text-sm italic mb-4">"Buat acara arisan kemarin saya order yang Milky Butter, semuanya pada nanyain beli di mana. Fix bakal jadi langganan terus di sini."</p>
+                <div class="font-bold text-xs text-[#A26967]">- Kak Citra, Tangerang</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#F3E9DC] relative">
+                <span class="text-4xl text-[#FAEDCD] absolute top-2 right-4 font-serif">“</span>
+                <p class="text-gray-600 text-sm italic mb-4">"Pelayanan via WA cepet banget responnya, pengiriman juga instan jadi rotinya nyampe rumah masih agak anget. Recommended!"</p>
+                <div class="font-bold text-xs text-[#A26967]">- Bp. Rian, Bekasi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR 4: FAQ (PERTANYAAN POPULER) -->
+    <section id="faq" class="bg-[#FAEDCD]/20 py-16 border-y border-[#F3E9DC]">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-2xl font-brand font-600 text-[#4A3E3D] text-center mb-8">Pertanyaan yang Sering Diajukan</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-xl border border-[#F3E9DC]">
+                    <h4 class="font-semibold text-sm text-[#4A3E3D]">🍞 Roti Bunny Bun tahan berapa lama?</h4>
+                    <p class="text-gray-500 text-xs mt-1">Karena kami tidak menggunakan bahan pengawet komersial, roti kami tahan 3 hari di suhu ruangan dan hingga 7 hari jika disimpan di dalam kulkas rapat.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-[#F3E9DC]">
+                    <h4 class="font-semibold text-sm text-[#4A3E3D]">📦 Apakah bisa kirim ke luar kota?</h4>
+                    <p class="text-gray-500 text-xs mt-1">Untuk saat ini kami hanya melayani wilayah JABODETABEK menggunakan kurir instan/sameday agar kualitas kelembutan roti tetap terjaga sempurna sampai di tangan Anda.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-[#F3E9DC]">
+                    <h4 class="font-semibold text-sm text-[#4A3E3D]">🛍️ Apakah menerima pesanan dalam jumlah besar?</h4>
+                    <p class="text-gray-500 text-xs mt-1">Bisa! Kami menerima pesanan untuk katering, arisan, ulang tahun, atau hampers. Harap melakukan pemesanan minimal H-2 melalui WhatsApp admin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR 5: FORM ORDER OTOMATIS KE WHATSAPP -->
+    <section id="order" class="max-w-xl mx-auto px-6 py-20">
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-[#F3E9DC]">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-brand font-600 text-[#A26967]">Formulir Pemesanan</h3>
+                <p class="text-gray-500 text-xs mt-1">Isi data di bawah ini, pesanan Anda akan otomatis terformat dan langsung dikirim ke WhatsApp kami.</p>
+            </div>
             
-            <div class="inline-block bg-[#FFFDF9] text-[#4A3E3D] p-6 rounded-3xl shadow-xl text-left max-w-sm w-full">
-                <h4 class="font-bold text-lg text-[#A26967] mb-2">📍 Info Toko:</h4>
-                <p class="text-sm text-gray-600 mb-4">Jl. Toko Roti Manis No. 12, Jakarta Selatan</p>
-                <h4 class="font-bold text-lg text-[#A26967] mb-2">⏰ Jam Operasional:</h4>
-                <p class="text-sm text-gray-600 mb-6">Setiap Hari (07.00 - 20.00 WIB)</p>
-                
-                <!-- LINK WHATSAPP LANGSUNG -->
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Bunny%20Bun,%20saya%20ingin%20memesan%20roti%20hari%20ini.%20Bagaimana%20caranya?" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-4 rounded-xl hover:bg-[#20ba59] transition text-center shadow-md">
-                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.66.986 3.296 1.489 4.944 1.492 5.428 0 9.849-4.416 9.853-9.842.002-2.628-1.02-5.1-2.875-6.958C16.659 1.988 14.177 1.001 11.56 1a9.846 9.846 0 0 0-9.842 9.847c-.002 1.748.474 3.424 1.379 4.948l-.992 3.621 3.71-.973zm13.066-7.355c-.302-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.3-.775 1.003-.95 1.2-.175.2-.35.225-.652.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.134-.134.302-.35.453-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.676-1.628-.926-2.228-.243-.584-.489-.505-.676-.514-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8 0-.276-.3-.775-1.2-.95-1.5-.175-.35-.35-.3-.525-.3h-.3c-.3 0-.775.125-1.175.575-.4.45-1.525 1.492-1.525 3.635 0 2.143 1.55 4.213 1.775 4.513.225.3 3.05 4.657 7.391 6.533 1.032.447 1.84.713 2.467.914 1.037.33 1.981.284 2.727.173.831-.124 1.78-.727 2.03-1.43.25-.702.25-1.303.175-1.43-.075-.125-.275-.2-.575-.35z"/></svg>
-                    Hubungi via WhatsApp
-                </a>
-            </div>
+            <form onsubmit="kirimKeWhatsApp(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-semibold text-gray-700 mb-1">Nama Lengkap</label>
+                    <input type="text" id="nama" required class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm" placeholder="Contoh: Jessica">
+                </div>
+                <div>
+                    <label class="block font-semibold text-gray-700 mb-1">Alamat Pengiriman</label>
+                    <textarea id="alamat" required rows="2" class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm" placeholder="Tulis alamat lengkap & patokan rumah..."></textarea>
+                </div>
+                <div>
+                    <label class="block font-semibold text-gray-700 mb-1">Pilihan Roti & Jumlah</label>
+                    <textarea id="pesanan" required rows="3" class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm" placeholder="Contoh:&#10;2x Choco Bunny Melt&#10;1x Milky Butter Bun"></textarea>
+                </div>
+                <div>
+                    <label class="block font-semibold text-gray-700 mb-1">Metode Pembayaran</label>
+                    <select id="metode" class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm bg-white">
+                        <option value="QRIS / E-Wallet">QRIS / E-Wallet</option>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="COD (Bayar Di Tempat)">COD (Bayar di Tempat)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-[#25D366] text-white py-3.5 rounded-xl font-bold hover:bg-[#20ba59] transition flex items-center justify-center gap-2 text-sm shadow-md mt-2">
+                    🚀 Kirim Pesanan ke WhatsApp
+                </button>
+            </form>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-[#4A3E3D] text-[#FAEDCD] text-center py-6 text-sm border-t border-[#5C4D4C]">
-        <p>© 2026 Bunny Bun. Made with ❤️ and Fresh Flour.</p>
+    <!-- FOOTER & KONTAK -->
+    <footer class="bg-[#4A3E3D] text-[#FAEDCD] pt-12 pb-6 border-t border-[#5C4D4C]">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-sm">
+            <div class="space-y-3">
+                <h4 class="text-xl font-brand text-white">🐰 Bunny Bun</h4>
+                <p class="text-gray-400 text-xs">Membawa kebahagiaan dan kelembutan roti premium langsung ke depan pintu rumah Anda setiap hari.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="font-semibold text-white">📍 Jam & Lokasi Outlet</h4>
+                <p class="text-gray-400 text-xs">Jl. Toko Roti Manis No. 12, Jakarta Selatan</p>
+                <p class="text-gray-400 text-xs">Buka: Setiap Hari (07.00 - 20.00 WIB)</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="font-semibold text-white">📞 Kontak Kami</h4>
+                <p class="text-gray-400 text-xs">WhatsApp: +62 812-3456-7890</p>
+                <p class="text-gray-400 text-xs">Email: hello@bunnybun.com</p>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-500 pt-6 border-t border-[#5C4D4C]">
+            <p>© 2026 Bunny Bun Official. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <!-- FITUR 6: TOMBOL WHATSAPP MELAYANG (FLOATING BUTTON) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Bunny%20Bun,%20saya%20mau%20tanya-tanya%20mengenai%20menu%20rotinya%20ya." target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center group" title="Chat Admin">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.66.986 3.296 1.489 4.944 1.492 5.428 0 9.849-4.416 9.853-9.842.002-2.628-1.02-5.1-2.875-6.958C16.659 1.988 14.177 1.001 11.56 1a9.846 9.846 0 0 0-9.842 9.847c-.002 1.748.474 3.424 1.379 4.948l-.992 3.621 3.71-.973zm13.066-7.355c-.302-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.3-.775 1.003-.95 1.2-.175.2-.35.225-.652.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.134-.134.302-.35.453-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.676-1.628-.926-2.228-.243-.584-.489-.505-.676-.514-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8 0-.276-.3-.775-1.2-.95-1.5-.175-.35-.35-.3-.525-.3h-.3c-.3 0-.775.125-1.175.575-.4.45-1.525 1.492-1.525 3.635 0 2.143 1.55 4.213 1.775 4.513.225.3 3.05 4.657 7.391 6.533 1.032.447 1.84.713 2.467.914 1.037.33 1.981.284 2.727.173.831-.124 1.78-.727 2.03-1.43.25-.702.25-1.303.175-1.43-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
+    <!-- JAVASCRIPT UNTUK LOGIK FORM WA -->
+    <script>
+        function kirimKeWhatsApp(event) {
+            event.preventDefault();
+            
+            // Ganti nomor ini dengan nomor WhatsApp tokomu (gunakan kode negara 62 di depan)
+            const nomorWA = "6281234567890"; 
+            
+            // Mengambil data dari form input
+            const nama = document.getElementById('nama').value;
+            const alamat = document.getElementById('alamat').value;
+            const pesanan = document.getElementById('pesanan').value;
+            const metode = document.getElementById('metode').value;
+            
+            // Format pesan teks yang akan dikirim
+            const teksPesan = `Halo Bunny Bun, Saya mau pesan Roti!\n\n` +
+                              `📝 *Data Pemesan*:\n` +
+                              `• Nama: ${nama}\n` +
+                              `• Alamat: ${alamat}\n\n` +
+                              `🍞 *Detail Pesanan*:\n${pesanan}\n\n` +
+                              `💳 *Metode Pembayaran*: ${metode}\n\n` +
+                              `Mohon segera ditotal dan diinfokan ongkirnya ya admin, Terima kasih!`;
+            
+            // Mengubah teks ke format URL
+            const urlWhatsApp = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teksPesan)}`;
+            
+            // Membuka tab baru ke WhatsApp
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
 
 </body>
 </html>
